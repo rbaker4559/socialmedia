@@ -36,7 +36,7 @@ module.exports = {
       if (!post) {
         return res
           .status(404)
-          .json({ message: 'comment created, but no posts with this ID' });
+          .json({ message: 'test' });
       }
 
       res.json({ message: 'comment created' });
