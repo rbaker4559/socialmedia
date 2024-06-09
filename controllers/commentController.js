@@ -9,7 +9,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Get a single comment
+  
   async getSingleComment(req, res) {
     try {
       const comment = await Comment.findOne({ _id: req.params.commentId });
@@ -23,7 +23,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Create a comment
+  
   async createComment(req, res) {
     try {
       const comment = await Comment.create(req.body);

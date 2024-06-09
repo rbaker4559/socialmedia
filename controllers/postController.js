@@ -22,7 +22,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // create a new post
+  
   async createPost(req, res) {
     try {
       const dbPostData = await Post.create(req.body);
